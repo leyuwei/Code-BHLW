@@ -1,0 +1,18 @@
+{
+  "name": "bhlw",
+  "version": "1.0.0",
+  "description": "B-HLW simulation and Ethereum workflow verification",
+  "scripts": {
+    "test": "python verification/verify_policy.py && node \"Secure Communication Smart Contract/verify_contract.cjs\" && node \"Secure Communication Smart Contract/test_workflow.cjs\"",
+    "compile": "node \"Secure Communication Smart Contract/compile.cjs\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ethers": "6.13.5",
+    "ganache": "7.9.2",
+    "solc": "0.8.21"
+  },
+  "private": true
+}
